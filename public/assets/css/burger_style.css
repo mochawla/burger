@@ -1,0 +1,46 @@
+ body {
+     background: url(../img/burger_background.jpeg)
+ }
+
+ h1 {
+     text-align: center;
+     color:darkred;
+ }
+
+#menu-container{
+    border: 5px solid #d2b48c;
+    background-color: #d2b48c;
+    margin-right: 700px;
+    margin-left: 40px;
+    margin-top: 70px;
+    padding-bottom: 130px;
+}
+
+#container {
+    margin-left: 250px;
+    margin-top: 80px;
+}
+
+ h2 {
+     color:darkred;
+ }
+
+ #not-devoured {
+    width: 50%;
+    border: 5px dotted white;
+ }
+
+ #devoured { 
+    width: 50%;
+    border: 5px dotted white;  
+ }
+
+ ul {
+     color: white;
+     font-weight: bold;
+ }
+
+ label {
+     color: white;
+     font-weight: bold;
+ }
