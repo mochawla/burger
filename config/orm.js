@@ -25,9 +25,14 @@ insertOne: function(tableName, columnNames, values, cb) {
 },
 
 updateOne: function(tableName, objColVals, condition, cb) {
-    var queryString = "UPDATE ?? SET ? WHERE ?";
+    //var queryString = "UPDATE ?? SET ?? WHERE ?";
+    const queryString = `UPDATE ${tableName} SET devoured = ${objColVals.devoured} WHERE ${condition}`
     console.log(queryString)
-    connection.query(queryString, [tableName, objColVals, condition],
+    console.log(tableName);
+    console.log(objColVals);
+    console.log(condition);
+    //connection.query(queryString, [tableName, objColVals, condition],
+    connection.query(queryString,
     function(err, result){
         if(err){
             throw err;
